@@ -7,5 +7,4 @@ class Kata {
     }
   }
 
-  // finished code
   
