@@ -23,3 +23,5 @@ function reverseSeq(n){
     }
     return newArr
   }
+  //done
+k
