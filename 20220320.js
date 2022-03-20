@@ -25,5 +25,7 @@ function reverseSeq(n){
     return newArr
   }
 
-  
+  //finished
+
+
 
