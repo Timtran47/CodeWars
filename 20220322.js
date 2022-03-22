@@ -22,5 +22,4 @@ function paperwork(n, m) {
     }
   }
 
-  //completed
-  
+  //completed!
