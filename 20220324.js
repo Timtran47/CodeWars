@@ -32,3 +32,6 @@ var humanYearsCatYearsDogYears = function(humanYears) {
     }
      return [humanYears, 24+((humanYears-2)*4), 24+((humanYears-2)*5)];
   }
+
+  //completed
+  
