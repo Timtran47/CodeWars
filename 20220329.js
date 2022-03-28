@@ -19,3 +19,5 @@ function solve(arr){
     var alphabet = "abcdefghijklmnopqrstuvwxyz";
     return arr.map(x => x.toLowerCase().split('').filter((y,i) => i==alphabet.indexOf(y)).length);
   };
+
+  //done
