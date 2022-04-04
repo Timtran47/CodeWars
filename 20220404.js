@@ -13,6 +13,15 @@
 // 1 + 2 + 3 + 4 + 5 + 6 + 7 + 8
 
 
+//TEST CASES
+// describe('summation', function () {
+//     it('should return the correct total', function () {
+//       Test.assertEquals(summation(1), 1)
+//       Test.assertEquals(summation(8), 36)
+//     })
+//   })
+  
+
 
 
 //SOLUTION
