@@ -20,4 +20,4 @@ class SmallestIntegerFinder {
     }
   }
 
-  //completed
+  //completed//
