@@ -16,3 +16,5 @@ SOLUTION
 //       const number = Number(firstVal);
 //       return number
 //     }
+
+//completed
