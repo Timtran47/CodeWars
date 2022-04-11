@@ -27,4 +27,4 @@ function litres(time) {
     return waterConsumption
   }
 
-  //
+  /
