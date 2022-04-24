@@ -5,5 +5,14 @@
 // Note: Only valid inputs will be given.
 
 
+// //test cases
+// describe("Tests", () => {
+//     it("test", () => {
+//   Test.assertEquals(booleanToString(true), "true", 'When we pass in true, we want the string "true" as output');
+//   Test.assertEquals(booleanToString(false), "false", 'When we pass in false, we want the string "false" as output');
+//     });
+//   });
+
+
 //solution
 const booleanToString = b => b ? "true" : "false"
