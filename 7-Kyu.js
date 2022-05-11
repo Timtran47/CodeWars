@@ -56,7 +56,7 @@ String.prototype.toJadenCase = function () {
 //solution
 const squareDigits = num => Number(String(num).split("").map( x => x*x).join(''))
 
-
+//complated
 
 
 
