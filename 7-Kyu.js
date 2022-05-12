@@ -78,7 +78,9 @@ const squareDigits = num => Number(String(num).split("").map( x => x*x).join('')
 
 
 //SOLUTION
-
+function disemvowel(str) {
+    return str.replace(/[aeiou]/gi, '')
+  }
 
 
 
