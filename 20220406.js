@@ -19,3 +19,5 @@ class SmallestIntegerFinder {
       return args[0];
     }
   }
+
+  //completed
