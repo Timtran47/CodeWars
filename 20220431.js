@@ -6,7 +6,7 @@
 
 
 
-
+//
 
 //SOLUTION
 const reverseSeq = n => {
