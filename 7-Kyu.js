@@ -115,7 +115,7 @@ function highAndLow(numbers){
   //display wanted results
   return `${highNum} ${lowNum}`
 }
-//completed//
+//completed
 
 
 
