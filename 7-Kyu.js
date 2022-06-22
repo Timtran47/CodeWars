@@ -218,15 +218,49 @@ function filter_list(l) {
 //Isograms 6/21/2022
 
 
+// An isogram is a word that has no repeating letters, consecutive or non-consecutive. Implement a function that determines whether a string that contains only letters is an isogram. Assume the empty string is an isogram. Ignore letter case.
 
+// Example: (Input --> Output)
+
+// "Dermatoglyphics" --> true
+// "aba" --> false
+// "moOse" --> false (ignore letter case)
 
 
 
 
 //solution
 const isIsogram = (word) => {
+//use Set to return only unique characters then .size to determine the amount of uniqe characters. Compare to word length to set size to see if equal
   return new Set(word.toLowerCase()).size === word.length
 }
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+//Exes and Ohs 6-22-22
+
+
+// Check to see if a string has the same amount of 'x's and 'o's. The method must return a boolean and be case insensitive. The string can contain any char.
+
+// Examples input/output:
+
+// XO("ooxx") => true
+// XO("xooxx") => false
+// XO("ooxXm") => true
+// XO("zpzpzpp") => true // when no 'x' and 'o' is present should return true
+// XO("zzoo") => false
+
+
+
+
+//solution
+const XO = str => {
+  str = str.toLowerCase().split('');
+  return str.filter(x => x === 'x').length === str.filter(x => x === 'o').length;
+}
+
 
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
