@@ -286,8 +286,6 @@ function findShort(s){
   return sortedArr[0]
 }
 
-
-
 //completed//
 
 
