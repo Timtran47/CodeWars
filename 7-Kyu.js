@@ -264,3 +264,34 @@ const XO = str => {
 
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+//Shortest Word     6/28/22
+
+
+// Simple, given a string of words, return the length of the shortest word(s).
+
+// String will never be empty and you do not need to account for different data types.
+
+
+
+//solution
+function findShort(s){
+  //seperate each word as an array
+  let wordArr = s.split(" ")
+  //get the length for each word
+  let lengthArr = wordArr.map(x => x.length)
+  //sort by length
+  let sortedArr = lengthArr.sort((a,b) => a -b)
+  return sortedArr[0]
+}
+
+
+
+//completed
+
+
+
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
