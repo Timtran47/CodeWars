@@ -627,3 +627,19 @@ return true;
 
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+//Is this a triangle? 7/22/22
+
+// Implement a function that accepts 3 integer values a, b, c. The function should return true if a triangle can be built with the sides of given length and false in any other case.
+
+// (In this case, all triangles must have surface greater than 0 to be accepted).
+
+
+
+
+//solution
+//triangle inequality theorm. The sum of two sides must be greater than the last. 
+const isTriangle = (a, b, c) => ( a + b > c && b + c > a && c + a > b) ? true : false
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
