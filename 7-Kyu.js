@@ -731,3 +731,30 @@ function oddOrEven(array) {
 
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+//Divide and Conquer 7/28
+
+// Given a mixed array of number and string representations of integers, add up the string integers and subtract this from the total of the non-string integers.
+
+// Return as a number.
+
+
+
+//solution
+function divCon(x){
+  
+  //obtain value of the sum of numbers
+  let numberValue = x.filter(value => typeof value === 'number').reduce( (acc, n) => acc + n, 0)
+  
+  //filter for only string values and convert to a number in a new array
+  let stringValueArray = x.filter( value => typeof value === 'string').map(value => Number(value))
+  
+  //obtain the sum of the string values
+  
+  let stringValueTotal = stringValueArray.reduce( (acc, n) => acc + n, 0)
+  
+  return numberValue - stringValueTotal
+    
+  }
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
