@@ -934,6 +934,28 @@ var number=function(array){
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
+//Small Enough? - Beginner 8/23/22
 
+
+// You will be given an array and a limit value. You must check that all values in the array are below or equal to the limit value. If they are, return true. Else, return false.
+
+// You can assume all values in the array are numbers
+
+
+
+//solution
+
+
+function smallEnough(a, limit){
+  //filtering an array for values lower than the limit
+  let filteredResults = a.filter( value => value <= limit)
+  //if the length of filtered array is the same as the initial array length, then true
+  if ( filteredResults.length == a.length){
+    return true
+  }else{
+    return false
+  }
+}
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
