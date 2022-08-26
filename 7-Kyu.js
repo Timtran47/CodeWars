@@ -1022,5 +1022,29 @@ const capitals = word => word.split('') // split word into an array
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-
+//anagram dtection 8/28/22
  
+// An anagram is the result of rearranging the letters of a word to produce a new word (see wikipedia).
+
+// Note: anagrams are case insensitive
+
+// Complete the function to return true if the two arguments given are anagrams of each other; return false otherwise.
+
+// Examples
+// "foefet" is an anagram of "toffee"
+
+// "Buckethead" is an anagram of "DeathCubeK"
+
+
+
+//solution
+// write the function isAnagram
+var isAnagram = function(test, original) {
+  
+  const t = test.toUpperCase().split('').sort().join('')
+  const o= original.toUpperCase().split('').sort().join('')
+  return (o == t) ? true :false
+  
+  };
+
+  ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
