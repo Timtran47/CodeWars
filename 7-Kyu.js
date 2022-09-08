@@ -1044,7 +1044,30 @@ var isAnagram = function(test, original) {
   const t = test.toUpperCase().split('').sort().join('')
   const o= original.toUpperCase().split('').sort().join('')
   return (o == t) ? true :false
-  
   };
+
+  ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+  //Stanton Measure 9/7/22
+
+  The Stanton measure of an array is computed as follows: count the number of occurences for value 1 in the array. Let this count be n. The Stanton measure is the number of times that n appears in the array.
+
+  Write a function which takes an integer array and returns its Stanton measure.
+
+  Examples
+  The Stanton measure of [1, 4, 3, 2, 1, 2, 3, 2] is 3, because 1 occurs 2 times in the array and 2 occurs 3 times.
+
+  The Stanton measure of [1, 4, 1, 2, 11, 2, 3, 1] is 1, because 1 occurs 3 times in the array and 3 occurs 1 time.
+
+
+
+//solution
+
+function stantonMeasure(arr){
+  //calculate how many times the number 1 appears in the original array
+  let n = arr.filter( item => item == 1).length
+  return arr.filter(item => item == n).length
+}
+
 
   ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
