@@ -1163,3 +1163,30 @@ function stantonMeasure(arr){
 
 
   /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+  //Remove duplicate words 10/6/22
+
+//   Your task is to remove all duplicate words from a string, leaving only single (first) words entries.
+
+// Example:
+
+// Input:
+
+// 'alpha beta beta gamma gamma gamma delta alpha beta beta gamma gamma gamma delta'
+
+// Output:
+
+// 'alpha beta gamma delta'
+
+
+//solution
+
+
+const removeDuplicateWords = s => [...new Set(s.split(' '))].join(' ')
+
+
+
+
+
+  ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
