@@ -1224,10 +1224,8 @@ const removeDuplicateWords = s => [...new Set(s.split(' '))].join(' ')
 // "www.codewars.com?page=1" -->"www.codewars.com?page=1"
 
 //solution
-
-
-
-
-
+function removeUrlAnchor(url){
+  return url.split('#')[0];
+}
 
   /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
