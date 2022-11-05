@@ -196,7 +196,7 @@ function findDeletedNumber(arr, mixArr) {
   if (arr.length == mixArr.length){
     return 0
   }else{
-    return arr.reduce( (val, acc) => val + acc, 0) - mixArr.reduce( (val, acc) => val + acc, 0)
+    return arr.reduce( (a, acc) => a + acc, 0) - mixArr.reduce( (a, acc) => a + acc, 0)
   }
 }
 
