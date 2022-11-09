@@ -193,7 +193,7 @@ function shorter_reverse_longer(a,b){
 //solution
 
 function findDeletedNumber(arr, mixArr) {
-  if (arr.length == mixArr.length){
+  if (arr.length === mixArr.length){
     return 0
   }else{
     return arr.reduce( (a, acc) => a + acc, 0) - mixArr.reduce( (a, acc) => a + acc, 0)
@@ -201,3 +201,31 @@ function findDeletedNumber(arr, mixArr) {
 }
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+//Array.diff 11/9/22
+
+// Your goal in this kata is to implement a difference function, which subtracts one list from another and returns the result.
+
+// It should remove all values from list a, which are present in list b keeping their order.
+
+// arrayDiff([1,2],[1]) == [2]
+// If a value is present in b, all of its occurrences must be removed from the other:
+
+// arrayDiff([1,2,2,2,3],[2]) == [1,3]
+
+
+
+
+//solution
+
+function arrayDiff(a, b) {
+  if( a == [] ){
+    return b
+  }else if (b == []){
+    return a
+  }else{
+    return a.filter(num => !b.includes(num))
+  }
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
