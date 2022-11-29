@@ -273,9 +273,32 @@ function isValidWalk(walk) {
 
 function sortArray(arr) {
   // filter->sort
-  const oddNums = arr.filter(n => n% 2 !== 0 ).sort((a,b) => a-b)
+  const oddNums = arr.filter(n => n% 2 !== 0 ).sort((a,b) => b - a)
   //console.log(oddNums)
   //map
-  return arr.map(n => n % 2 === 0 ? n : oddNums.shift())
+  return arr.map(n => n % 2 === 0 ? n : oddNums.pop())
 }
-///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+//String array duplicates 11/29
+
+
+// In this Kata, you will be given an array of strings and your task is to remove all consecutive duplicate letters from each string in the array.
+
+// For example:
+
+// dup(["abracadabra","allottee","assessee"]) = ["abracadabra","alote","asese"].
+
+// dup(["kelless","keenness"]) = ["keles","kenes"].
+
+// Strings will be lowercase only, no spaces. See test cases for more examples.
+
+
+//solution
+
+function dup(s) {
+  return s.map( word => word.split('').filter( (letter, i, arr)=> letter != arr[i - 1] ).join('') )
+ };
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
