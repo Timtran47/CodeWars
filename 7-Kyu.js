@@ -1349,7 +1349,7 @@ function sumTwoSmallestNumbers(numbers) {
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
-// Recursion #1 - Factorial 1/18/23
+//  - Factorial 1/18/23
 
 // n mathematics, the factorial of a non-negative integer n, denoted by n!, is the product of all positive integers less than or equal to n. For example,
 
@@ -1371,3 +1371,47 @@ const factorial = n => {
 
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+// Recursion # 2 - Fibonacci 1/20/23
+
+
+// ##2 - Fibonacci number
+
+// In mathematical terms, the sequence f(n) of fibonacci numbers is defined by the recurrence relation
+
+// f(n) = f(n-1) + f(n-2)
+
+// with seed values
+
+// f(1) = 1 and f(2) = 1
+
+// #Your task
+
+// You have to create the function fibonacci that receives n and returns f(n). You have to use recursion.
+
+
+
+//solution
+
+
+
+
+//memoization solution
+
+const memo = {}
+function fibonacci(n) {
+    if(n <= 1){
+        return n
+    }else if( memo[n] ){
+        return memo[n]
+    }else{
+        let result = fibonacci(n - 1) + fibonacci(n - 2)
+        memo[n] = result
+        return result
+    }
+}
+
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
