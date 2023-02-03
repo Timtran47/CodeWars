@@ -1471,7 +1471,7 @@ class Queue {
 }
 
 
-//more efficient implementation. 
+//more efficient implementation
 class Queue {
   constructor() {
     this.storage = {}
