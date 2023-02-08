@@ -1449,14 +1449,49 @@ function mygcd(x,y){
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
+//Implementing a Queue
+
+//using array methods
+class Queue {
+  constructor() {
+    this.list = []
+  }
+  
+  size() {
+    return this.list.length
+  }
+  
+  enqueue(item) {
+    this.list.push(item)
+  }
+  
+  dequeue() {
+    return this.list.shift()
+  }
+}
+
+
+//more efficient implementation. 
+class Queue {
+  constructor() {
+    this.storage = {}
+    this.head = 0
+    this.tail = 0
+  }
+  enqueue(element) {
+    this.storage[this.tail] = element
+    this.tail++
+  }
+  dequeue() {
+    let removed = this.storage[this.head]
+    delete this.storage[this.head]
+    this.head++
+    return removed
+  }
+}
 
 
 
 
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-
-
-
-
-
-/
