@@ -1571,7 +1571,10 @@ const trim = (str, size) => {
 //solution
 const describeAge=age=>age<=12?"You're a(n) kid":age>12&&age<18?"You're a(n) teenager":age>17&&age< 65?"You're a(n) adult":"You're a(n) elderly"
 
-
+//optimal
+// function describeAge(age) {
+//   return "You're a(n) " + (age < 13 ? "kid" : age < 18 ? "teenager" : age < 65 ? "adult" : "elderly")
+// }
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
