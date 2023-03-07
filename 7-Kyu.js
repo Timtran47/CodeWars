@@ -1602,6 +1602,18 @@ const describeAge=age=>age<=12?"You're a(n) kid":age>12&&age<18?"You're a(n) tee
 
 //solution
 
+function sortMyString(S) {
+  //break up the string into array
+  const stringArr = S.split('')
+  
+  //filter for even indexs
+  let even = stringArr.filter(((e,i)=>i%2 === 0)).join('')
+  
+  //filter for odd indexes
+  let odd = stringArr.filter((e,i)=>i%2 === 1).join('')
+
+  return `${even} ${odd}`
+}
 
 
 
